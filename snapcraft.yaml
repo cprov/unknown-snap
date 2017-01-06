@@ -1,0 +1,15 @@
+name: unknown-cprov
+version: 1.0
+summary: This is a test snap
+description: This is a test snap
+confinement: strict
+grade: stable
+
+apps:
+    simple:
+        command: bin/simple
+
+parts:
+    simple:
+        plugin: make
+        source: .
